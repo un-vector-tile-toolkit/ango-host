@@ -1,0 +1,6 @@
+apps:
+  - script: index.js
+    name: ango
+    instances: 4
+    exec_mode: cluster
+

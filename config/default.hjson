@@ -1,0 +1,7 @@
+{
+  htdocsDir: htdocs
+  fontsDir: ../openmaptiles-fonts
+  mbtilesPath: ../ango-produce/tiles.mbtiles
+  port: 3000
+}
+
