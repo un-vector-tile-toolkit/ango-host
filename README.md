@@ -10,19 +10,19 @@ We also have a [development note in Japanese language](https://hackmd.io/@hfu/an
 
 # Install
 ```console
-git clone git@github.com:un-vector-tile-toolkit/ango-host
-cd ango-host
-yarn
+$ git clone git@github.com:un-vector-tile-toolkit/ango-host
+$ cd ango-host
+$ yarn
 ```
 
 # Run
 ```console
-$ pm2 start process.yml
+$ rake start
 ```
 
 # Stop
 ```console
-$ pm2 stop ango; pm2 delete ango
+$ rake stop
 ```
 
 # Attribution

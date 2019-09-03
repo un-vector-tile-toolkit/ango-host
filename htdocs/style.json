@@ -1,0 +1,38 @@
+{
+  center:
+  [
+    135
+    35
+  ]
+  glyphs: http://localhost:3000/fonts/{fontstack}/{range}.pbf
+  layers: []
+  sources:
+  {
+    ort:
+    {
+      attribution: Geospatial Information Authority of Japan
+      maxzoom: 18
+      minzoom: 0
+      tileSize: 256
+      tiles:
+      [
+        https://maps.gsi.go.jp/xyz/org/{z}/{x}/{y}.jpg
+      ]
+      type: raster
+    }
+    v:
+    {
+      attribution: Geospatial Information Authority of Japan
+      maxzoom: 10
+      minzoom: 7
+      tiles:
+      [
+        http://localhost:3000/zxy/{z}/{x}/{y}.pbf
+      ]
+      type: vector
+    }
+  }
+  sprite: http://localhost:3000/sprite/sprite
+  version: 8
+  zoom: 7
+}
