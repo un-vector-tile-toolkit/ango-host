@@ -1,38 +1,48 @@
 {
-  center:
-  [
-    135
+  "center": [
+    135,
     35
-  ]
-  glyphs: http://localhost:3000/fonts/{fontstack}/{range}.pbf
-  layers: []
-  sources:
-  {
-    ort:
+  ],
+  "glyphs": "http://localhost:3000/fonts/{fontstack}/{range}.pbf",
+  "layers": [
     {
-      attribution: Geospatial Information Authority of Japan
-      maxzoom: 18
-      minzoom: 0
-      tileSize: 256
-      tiles:
-      [
-        https://maps.gsi.go.jp/xyz/org/{z}/{x}/{y}.jpg
-      ]
-      type: raster
-    }
-    v:
+      "id": "ort",
+      "source": "ort",
+      "type": "raster"
+    },
     {
-      attribution: Geospatial Information Authority of Japan
-      maxzoom: 10
-      minzoom: 7
-      tiles:
-      [
-        http://localhost:3000/zxy/{z}/{x}/{y}.pbf
-      ]
-      type: vector
+      "id": "ndm",
+      "layout": {
+        "icon-image": "記念碑"
+      },
+      "paint": {},
+      "source": "v",
+      "source-layer": "ndm",
+      "type": "symbol"
     }
-  }
-  sprite: http://localhost:3000/sprite/sprite
-  version: 8
-  zoom: 7
+  ],
+  "sources": {
+    "ort": {
+      "attribution": "Geospatial Information Authority of Japan",
+      "maxzoom": 18,
+      "minzoom": 0,
+      "tileSize": 256,
+      "tiles": [
+        "https://maps.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg"
+      ],
+      "type": "raster"
+    },
+    "v": {
+      "attribution": "Geospatial Information Authority of Japan",
+      "maxzoom": 10,
+      "minzoom": 7,
+      "tiles": [
+        "http://localhost:3000/zxy/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    }
+  },
+  "sprite": "http://localhost:3000/sprite/std",
+  "version": 8,
+  "zoom": 7
 }

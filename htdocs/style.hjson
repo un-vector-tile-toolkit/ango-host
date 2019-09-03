@@ -15,7 +15,7 @@
     ort: {
       type: raster
       tiles: [
-        https://maps.gsi.go.jp/xyz/org/{z}/{x}/{y}.jpg
+        https://maps.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg
       ]
       tileSize: 256
       attribution: Geospatial Information Authority of Japan
@@ -23,9 +23,25 @@
       maxzoom: 18
     }
   }
-  sprite: http://localhost:3000/sprite/sprite
+  sprite: http://localhost:3000/sprite/std
   glyphs: http://localhost:3000/fonts/{fontstack}/{range}.pbf
   layers: [
+    {
+      id: ort
+      type: raster
+      source: ort
+    }
+    {
+      id: ndm
+      type: symbol
+      source: v
+      source-layer: ndm
+      layout: {
+        icon-image: 記念碑
+      }
+      paint: {
+      }
+    }
   ]
 }
 

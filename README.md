@@ -28,3 +28,15 @@ $ rake stop
 # Attribution
 The sprite is by the Geospatial Information Authority of Japan. 
 
+We included mapbox/mapbox-gl-js as below:
+
+```console
+$ git clone git@github.com:mapbox/mapbox-gl-js
+$ cd mapbox-gl-js
+$ yarn
+$ yarn run build-prod-min
+$ yarn run build-css
+$ cd ../ango-host
+$ rake _mapbox
+```
+

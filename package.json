@@ -11,5 +11,10 @@
     "express": "^4.17.1",
     "hjson": "^3.1.2",
     "spdy": "^4.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babelify": "^10.0.0"
   }
 }
