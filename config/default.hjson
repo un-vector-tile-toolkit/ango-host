@@ -1,6 +1,6 @@
 {
   htdocsDir: htdocs
-  fontsDir: ../openmaptiles-fonts
+  fontsDir: ../noto-jp
   mbtilesPath: ../ango-produce/tiles.mbtiles
   port: 3000
 }
