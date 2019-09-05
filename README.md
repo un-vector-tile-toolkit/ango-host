@@ -15,6 +15,11 @@ $ cd ango-host
 $ yarn
 ```
 
+# Build site files
+```console
+$ rake build
+```
+
 # Run
 ```console
 $ rake start

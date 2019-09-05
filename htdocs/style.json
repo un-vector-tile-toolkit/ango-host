@@ -13,9 +13,53 @@
     {
       "id": "ndm",
       "layout": {
-        "icon-image": "記念碑"
+        "icon-image": "記念碑",
+        "text-anchor": "left",
+        "text-field": [
+          "step",
+          [
+            "zoom"
+          ],
+          [
+            "get",
+            "DisasterKind"
+          ],
+          8,
+          [
+            "get",
+            "LoreName"
+          ],
+          13,
+          [
+            "get",
+            "DisasterInfo"
+          ]
+        ],
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-justify": "left",
+        "text-max-width": 20,
+        "text-offset": [
+          1,
+          0
+        ]
       },
-      "paint": {},
+      "paint": {
+        "text-color": [
+          "rgb",
+          0,
+          0,
+          0
+        ],
+        "text-halo-color": [
+          "rgb",
+          255,
+          255,
+          255
+        ],
+        "text-halo-width": 1
+      },
       "source": "v",
       "source-layer": "ndm",
       "type": "symbol"
