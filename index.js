@@ -12,7 +12,7 @@ const port = config.get('port')
 const app = express()
 app.use(cors())
 app.use('/', express.static(htdocsDir))
-app.use('/fonts', express.static(fontsDir))
+app.use('/noto-jp', express.static(fontsDir))
 
 const openMbtiles = () => {
   return new Promise((resolve, reject) => {
